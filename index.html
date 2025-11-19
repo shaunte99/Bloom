@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BLOOM — Sanctuary</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <!-- Background image (replace park-marble.jpg with your park image) -->
+  <div class="bg" role="img" aria-label="Soft park background with marble texture"></div>
+
+  <!-- Audio (replace audio/playlist.mp3 with your audio file) -->
+  <audio id="bgAudio" loop preload="auto">
+    <source src="audio/Anchor (Instrumental).mp3" type="audio/mpeg">
+  </audio>
+  <button id="audioToggle" class="audio-toggle" aria-pressed="false" aria-label="Toggle background audio">♫</button>
+
+  <!-- App wrapper -->
+  <div class="app">
+
+    <!-- Header -->
+    <header class="header">
+      <h1 class="brand">BLOOM</h1>
+      <p class="tag">A private sanctuary.</p>
+    </header>
+
+    <main class="main">
+
+      <!-- Daily Scripture -->
+      <section class="card" id="scriptureSection" aria-labelledby="scriptureTitle">
+        <h2 id="scriptureTitle" class="section-title">Daily Scripture</h2>
+
+        <blockquote class="verse" id="verseText">
+          “Trust in the Lord with all your heart; do not rely on your own understanding.” — Proverbs 3:5
+        </blockquote>
+
+        <div class="explain" id="verseExplain">
+          <p>
+            Proverbs 3:5–6 is God’s quiet reminder that you don’t have to hold every piece of life together by yourself. “Trust in the Lord with all your heart” means letting Him carry the places in you that feel stretched, exhausted, or unsure, knowing He understands the weight you’re under even when no one else sees it. “Lean not on your own understanding” is His way of softly telling you that you don’t need to figure everything out — your perspective is shaped by the battles you’ve survived, but His is shaped by the future He’s preparing for you. And when you acknowledge Him in every part of your life, even the small everyday moments, you allow Him to guide you with a tenderness that never forces and never fails. His promise is simple and beautiful: He will direct your path, gently, intentionally, and with a love that refuses to let your sacrifices go unnoticed or your future go unprotected.
+          </p>
+        </div>
+
+        <div class="media">
+          <!-- replace the src with your chosen video link -->
+          <div class="iframe-wrap">
+            <iframe id="scriptureVideo"
+                    src="https://www.youtube.com/embed/1aeoQfNRTxM"
+                    title="Daily scripture video"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Purpose / Meaning -->
+      <section class="card" id="purposeSection" aria-labelledby="purposeTitle">
+        <h2 id="purposeTitle" class="section-title">Purpose & Meaning</h2>
+
+        <p class="paragraph">
+          You are a deliberate design. Purpose is not a one-time reveal but a daily unfolding. Your dreams are coordinates, gentle
+          invitations from God pointing toward people, places and prayers only you can steward. Small steps, steady obedience, trust.
+        </p>
+
+        <p class="paragraph subtle">
+          Action suggestion: pick one tiny thing that made You Proud. Celebrate it.
+        </p>
+      </section>
+
+    <!-- Song of the Day -->
+<section class="card" id="songSection" aria-labelledby="songTitle">
+  <h2 id="songTitle" class="section-title">Song of the Day</h2>
+
+  <p class="song-meta"><strong id="songName">Pretty Girl Rock by Keri Hilson</strong></p>
+
+  <div class="iframe-wrap">
+    <!-- Using local video file instead of YouTube -->
+    <video id="songVideo" width="100%" height="215" controls>
+      <source src="videos/Keri Hilson - Pretty Girl Rock.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <p class="paragraph subtle">Today’s song is ‘Pretty Girl Rock’ by Keri Hilson. A joyful reminder that you are brilliant, beautiful, and fully yourself. The world sees your light, and so do I. Play it, dance, smile, and let the lyrics celebrate everything that makes you shine.</p>
+</section>
+ 
+
+      <!-- Mood Tracker -->
+      <section class="card" id="moodSection" aria-labelledby="moodTitle">
+        <h2 id="moodTitle" class="section-title">Mood Tracker</h2>
+
+        <p class="paragraph">Tap the mood that fits your heart right now.</p>
+
+        <div class="mood-grid" role="list">
+          <button class="mood-btn" data-key="joy" aria-label="Joy" role="listitem">Joy</button>
+          <button class="mood-btn" data-key="calm" aria-label="Calm" role="listitem">Calm</button>
+          <button class="mood-btn" data-key="tired" aria-label="Tired" role="listitem">Tired</button>
+          <button class="mood-btn" data-key="anxious" aria-label="Anxious" role="listitem">Anxious</button>
+          <button class="mood-btn" data-key="grateful" aria-label="Grateful" role="listitem">Grateful</button>
+        </div>
+
+        <div id="moodResult" class="mood-result" aria-live="polite"></div>
+
+        <div class="mood-actions">
+          <button id="viewHistory" class="ghost-btn">View 14-day mood history</button>
+          <button id="clearHistory" class="ghost-btn">Clear history</button>
+        </div>
+      </section>
+
+      <!-- Encouragement Message -->
+      <section class="card" id="messageSection" aria-labelledby="messageTitle">
+        <h2 id="messageTitle" class="section-title">Daily reminder</h2>
+
+        <div id="customMessage" class="message-box">
+          <!-- Paste your personal message here or update via JS -->
+          <p class="paragraph">
+           Even when the world feels heavy and the weight of responsibility presses on your shoulders, God sees every fight you face. He knows the nights you’ve cried Alone, the moments you felt too tired to keep going, and the sacrifices no one noticed. He is not distant, He is holding you, strengthening your heart, and guiding your steps. Your courage matters more than you know, your dreams are sacred, and your life is woven with purpose by His hand. Today, lean into Him fully. Let Him carry what you cannot. And remember: you are never alone, your tears are not wasted, and every step you take is leading to a future only He can create
+          </p>
+        </div>
+
+        <div class="message-actions">
+          <button id="printMessage" class="primary-btn">Print as Letter</button>
+          <button id="saveMessage" class="ghost-btn">Save to favorites</button>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p class="foot-note">Private. Gentle. Made with prayer.</p>
+    </footer>
+  </div>
+
+  <script src="scripts/scripts.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
