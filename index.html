@@ -73,23 +73,25 @@
         </p>
       </section>
 
-    <!-- Song of the Day -->
-<section class="card" id="songSection" aria-labelledby="songTitle">
-  <h2 id="songTitle" class="section-title">Song of the Day</h2>
+    <section class="card" id="artSection" aria-labelledby="artTitle">
+  <h2 id="artTitle" class="section-title">Art of the Day</h2>
 
-  <p class="song-meta"><strong id="songName">Pretty Girl Rock by Keri Hilson</strong></p>
+  <p class="song-meta"><strong id="artName">Meaning Of Creation Drawing</strong></p>
 
-  <div class="iframe-wrap">
-    <!-- Using local video file instead of YouTube -->
-    <video id="songVideo" width="100%" height="215" controls>
-      <source src="videos/Pretty Girl Rock (1).mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+  <div class="video-wrapper">
+    <img 
+      src="images/animals.png" 
+      alt="Description of your artwork" 
+      width="100%" 
+      style="border-radius:12px; display:block;"
+    />
   </div>
 
-  <p class="paragraph subtle">Today’s song is ‘Pretty Girl Rock’ by Keri Hilson. A joyful reminder that you are brilliant, beautiful, and fully yourself. The world sees your light, and so do I. Play it, dance, smile, and let the lyrics celebrate everything that makes you shine.</p>
+  <p class="paragraph subtle">
+     A field like this doesn’t happen by accident. Every petal, every wing, every quiet creature standing in the light is a reminder that creation is intentional and so are you. God didn’t design beauty this breathtaking just to decorate the world, He designed it to strengthen you. To show you that even in seasons that feel wild or overwhelming, there is a gentle order behind everything. If He can paint skies like this, He can guide your life with the same calm, the same detail, the same love. Look at this field and remember: you were created with purpose, surrounded by meaning, and carried by a God who still creates wonders.
+  </p>
 </section>
- 
+
 
       <!-- Mood Tracker -->
       <section class="card" id="moodSection" aria-labelledby="moodTitle">
@@ -132,8 +134,28 @@
 
     </main>
 
+    <section class="card" id="audioSongSection" aria-labelledby="audioSongTitle">
+  <h2 id="audioSongTitle" class="section-title">Song of the Day</h2>
+
+  <p class="song-meta">
+    <strong id="audioSongName">Pretty Girl Rock by Keri Hilson</strong>
+  </p>
+
+  <p class="paragraph subtle">
+    Today’s song is a celebration of YOU. It’s a joyful reminder that your light shines, your smile matters, and the world see your brilliance. Let this melody lift your spirit, dance in your heart, and remind you that being fully yourself is the most beautiful thing of all.
+  </p>
+
+  <div class="audio-wrapper">
+    <audio id="songOfTheDay" controls>
+      <source src="audio/Keri Hilson - Pretty Girl Rock (Official Video).mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</section>
+
+
     <footer class="footer">
-      <p class="foot-note">Private. Gentle. Made with prayer.</p>
+      <p class="foot-note">See you back tomorrow at 6pm</p>
     </footer>
   </div>
 
